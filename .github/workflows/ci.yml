@@ -30,7 +30,7 @@ jobs:
 
       - run: |
           pip install --index-url 'https://:2023-03-16T15:53:34.069817Z@time-machines-pypi.sealsecurity.io/' tox
-          tox -e linters
+          PIP_INDEX_URL='https://:2023-03-16T15:53:34.069817Z@time-machines-pypi.sealsecurity.io/' tox -e linters
 
   check-ci-config:
     name: Check CI config
